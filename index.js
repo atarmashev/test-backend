@@ -86,7 +86,6 @@ const deleteTask = (req, res) => {
     const deletedId = req.query.id;
 
     if (!isNaN(deletedId)) {
-        console.log(deletedId, tasks);
         tasks = tasks.filter(({id}) => id != deletedId);
 
         res.send();
